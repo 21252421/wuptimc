@@ -1,0 +1,14 @@
+body{margin:0;font-family:Arial;background:#0b1220;color:#e6ecff}
+.navbar{padding:20px;background:#0f1830;display:flex;justify-content:space-between}
+.logo{color:#6bdcff;font-weight:bold}
+.navbar a{color:white;text-decoration:none;margin-left:15px}
+.hero{height:90vh;display:flex;flex-direction:column;justify-content:center;align-items:center;
+background:linear-gradient(#000a,#000c)}
+.hero span{color:#3aa9ff}
+.section{padding:80px;text-align:center}
+.server-box{background:#111a2e;padding:15px;border-radius:8px}
+button,.vote-btn{background:#3aa9ff;color:white;border:none;padding:10px 20px;margin:10px;cursor:pointer}
+.cards{display:flex;justify-content:center;gap:20px}
+.card{background:#111a2e;padding:20px;border-radius:10px}
+.rules{max-width:400px;margin:auto;text-align:left}
+footer{text-align:center;padding:20px;background:#070c1a}
