@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<title>WuptiMC | Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="section">
+  <h2>Spiller Dashboard</h2>
+  <input id="username" placeholder="Minecraft navn">
+  <button onclick="login()">Log ind</button>
+  <div id="player-data"></div>
+</section>
+
+<script>
+async function login(){
+  const u = document.getElementById("username").value;
+  document.getElementById("player-data").innerHTML =
+    `<img src="https://mc-heads.net/avatar/${u}/128"><p>${u}</p>`;
+}
+</script>
+
+</body>
+</html>
