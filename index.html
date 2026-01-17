@@ -2,66 +2,82 @@
 <html lang="da">
 <head>
   <meta charset="UTF-8">
-  <title>WuptiMC | Minecraft Server</title>
+  <title>WuptiMC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header class="navbar glass">
-  <div class="logo">WuptiMC</div>
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-left">
+    <div class="logo">WuptiMC</div>
+    <div class="online">
+      <span class="dot"></span>
+      <span id="online-count">18 online</span>
+    </div>
+  </div>
+
   <nav>
-    <a href="#home">Hjem</a>
-    <a href="#features">Features</a>
-    <a href="#status">Status</a>
-    <a href="#join">Join</a>
+    <a href="#">Butik</a>
+    <a href="#">Ansøg</a>
+    <a href="#">Discord</a>
+    <a href="#">Spillere</a>
+    <a href="#">Server</a>
   </nav>
+
+  <button class="login-btn">Login</button>
 </header>
 
-<section class="hero" id="home">
-  <div class="hero-content fade">
-    <h1>Velkommen til <span>WuptiMC</span></h1>
-    <p>En moderne dansk Minecraft-server</p>
+<!-- HERO -->
+<section class="hero">
+  <h1>WuptiMC</h1>
+  <p>Din danske Minecraft-server</p>
 
-    <div class="server-box">
-      <span id="server-ip">play.wuptimc.dk</span>
-      <button onclick="copyIP()">Kopiér IP</button>
-    </div>
+  <div class="hero-buttons">
+    <button class="primary">Butik</button>
+    <button class="secondary">Information</button>
   </div>
 </section>
 
-<section class="section fade" id="features">
-  <h2>Features</h2>
-
-  <div class="cards">
-    <div class="card glass">
-      <h3>⚔️ Survival</h3>
-      <p>Vanilla+ gameplay med custom features.</p>
-    </div>
-
-    <div class="card glass">
-      <h3>🎉 Events</h3>
-      <p>Hyppige events og konkurrencer.</p>
-    </div>
-
-    <div class="card glass">
-      <h3>🛡️ Aktiv Staff</h3>
-      <p>Hjælpsomt og professionelt staff-team.</p>
-    </div>
+<!-- STATS -->
+<section class="stats">
+  <div>
+    <span>369</span>
+    Spillere i dag
+  </div>
+  <div>
+    <span id="online-big">18</span>
+    Online
+  </div>
+  <div>
+    <span>13.174</span>
+    Spillere i alt
   </div>
 </section>
 
-<section class="section dark fade" id="status">
-  <h2>Server Status</h2>
-  <p class="status">
-    Status: <span id="server-status">Loader...</span>
-  </p>
+<!-- FEATURES -->
+<section class="features">
+  <div class="feature-card">
+    <h3>Survival</h3>
+    <p>Custom gameplay med balance.</p>
+  </div>
+  <div class="feature-card">
+    <h3>Events</h3>
+    <p>Hyppige events og konkurrencer.</p>
+  </div>
+  <div class="feature-card">
+    <h3>Aktivt Staff</h3>
+    <p>Hjælp 24/7 på Discord.</p>
+  </div>
 </section>
 
-<section class="section fade" id="join">
-  <h2>Sådan joiner du</h2>
-  <ol class="steps">
-    <li>Åbn Minecraft (Java)</li>
-    <li>Multiplayer → Add Ser
+<footer>
+  © 2026 WuptiMC – Ikke tilknyttet Mojang
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
