@@ -12,3 +12,27 @@ button,.vote-btn{background:#3aa9ff;color:white;border:none;padding:10px 20px;ma
 .card{background:#111a2e;padding:20px;border-radius:10px}
 .rules{max-width:400px;margin:auto;text-align:left}
 footer{text-align:center;padding:20px;background:#070c1a}
+
+button {
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px #3aa9ff;
+}
+
+.section {
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
