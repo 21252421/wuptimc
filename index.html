@@ -4,37 +4,64 @@
   <meta charset="UTF-8">
   <title>WuptiMC | Minecraft Server</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="WuptiMC – Dansk Minecraft server">
+
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header class="navbar">
+<header class="navbar glass">
   <div class="logo">WuptiMC</div>
   <nav>
-    <a href="index.html">Hjem</a>
-    <a href="staff.html">Staff</a>
-    <a href="rules.html">Regler</a>
-    <a href="vote.html">Vote</a>
-    <a href="dashboard.html">Dashboard</a>
+    <a href="#home">Hjem</a>
+    <a href="#features">Features</a>
+    <a href="#status">Status</a>
+    <a href="#join">Join</a>
   </nav>
 </header>
 
-<section class="hero">
-  <h1>Velkommen til <span>WuptiMC</span></h1>
-  <p>Dansk Minecraft-server</p>
-  <div class="server-box">
-    <span id="server-ip">play.wuptimc.dk</span>
-    <button onclick="copyIP()">Kopiér IP</button>
+<section class="hero" id="home">
+  <div class="hero-content fade">
+    <h1>Velkommen til <span>WuptiMC</span></h1>
+    <p>En moderne dansk Minecraft-server</p>
+
+    <div class="server-box">
+      <span id="server-ip">play.wuptimc.dk</span>
+      <button onclick="copyIP()">Kopiér IP</button>
+    </div>
   </div>
 </section>
 
-<section class="section">
-  <h2>Server Status</h2>
-  <p>Status: <span id="server-status">Loader...</span></p>
+<section class="section fade" id="features">
+  <h2>Features</h2>
+
+  <div class="cards">
+    <div class="card glass">
+      <h3>⚔️ Survival</h3>
+      <p>Vanilla+ gameplay med custom features.</p>
+    </div>
+
+    <div class="card glass">
+      <h3>🎉 Events</h3>
+      <p>Hyppige events og konkurrencer.</p>
+    </div>
+
+    <div class="card glass">
+      <h3>🛡️ Aktiv Staff</h3>
+      <p>Hjælpsomt og professionelt staff-team.</p>
+    </div>
+  </div>
 </section>
 
-<footer>© 2026 WuptiMC</footer>
-<script src="script.js"></script>
-</body>
-</html>
+<section class="section dark fade" id="status">
+  <h2>Server Status</h2>
+  <p class="status">
+    Status: <span id="server-status">Loader...</span>
+  </p>
+</section>
+
+<section class="section fade" id="join">
+  <h2>Sådan joiner du</h2>
+  <ol class="steps">
+    <li>Åbn Minecraft (Java)</li>
+    <li>Multiplayer → Add Ser
