@@ -24,3 +24,18 @@ function fadeIn() {
 
 window.addEventListener("scroll", fadeIn);
 fadeIn();
+
+
+// Fake online counter animation
+let online = 18;
+const el = document.getElementById("online-big");
+const topEl = document.getElementById("online-count");
+
+setInterval(() => {
+  online += Math.random() > 0.5 ? 1 : -1;
+  if (online < 10) online = 10;
+  if (online > 40) online = 40;
+
+  el.innerText = online;
+  topEl.innerText = online + " online";
+}, 5000);
