@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Admin Panel</h2>
+<div id="logs"></div>
+
+<script>
+const API="https://DIT_BACKEND_URL";
+const me=JSON.parse(localStorage.getItem("user"));
+
+fetch(API+"/admin/logs",{headers:{userid:me.id}})
+.then(r=>r.json())
+.then(d=>{
+  document.getElementById("logs").innerHTML =
+    d.map(l=>`${l.actor} → ${l.action} (${l.target})`).join("<br>");
+});
+</script>
+</body>
+</html>
